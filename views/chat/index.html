@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <title>Chat Room</title>
+</head>
+
+<body>
+
+    <div id="name-box">
+        <h2 id="name-text">Please enter your chat name</h2>
+        <input id="name-input" type="text" />
+    </div>
+
+    <div class="chat-room">
+
+        <div id="users-connected">
+            <div id="users-connected_header">
+                <header>
+                    <h2>Users Connected</h2>
+                </header>
+            </div>
+            <div>
+                <ul id="users-connected_list">
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div id="chat-window">
+            <div id="chat-window_header">
+                <header>
+                    <h2>Chat Window</h2>
+                </header>
+            </div>
+
+            <div id="chat-window_messages">
+                <div id="output"></div>
+            </div>
+
+            <div id="chat-window_input_content">
+                <input id="chat-window_input" type="text" />
+                <button id="chat-window_input_btn" type="button">Send</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/chat.js"></script>
+    <script src="./js/nameBox.js"></script>
+</body>
+</html>
